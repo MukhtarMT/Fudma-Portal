@@ -1,0 +1,90 @@
+/* login page */
+.login,
+.signup,
+.reset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.logo {
+    font-size: 2rem;
+    background-color: #ff7200;
+    color: black ;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 4rem;
+}
+.login h4,
+.signup h4,
+.reset h4 {
+    font-size: 1.5rem;
+}
+span{
+    text-decoration: none;
+    color: #ff7200;
+    font-weight: bolder;
+}
+a {
+    text-decoration: none;
+    width: 100%;
+    color: #ff7200;
+    font-weight: bolder;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+}
+input {
+    border: 1px solid black;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 70%;
+}
+.email,
+.pass {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.check {
+    border: 2px solid red;
+}
+label {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Reset Password</title>
+</head>
+
+<body>
+    <!--Reset Password page-->
+    <div class="reset">
+        <div class="logo">FUDMA</div>
+        <div>
+            <h4>Reset your Password</h4>
+        </div>
+        <div class="form">
+            <div class="input">
+                <label for="email">Email:</label>
+                <input type="email" class="email" placeholder="example@gmail.com" />
+            </div>
+            <div class="input">
+                <label for="Password">New Password:</label>
+                <input type="password" class="pass" placeholder="**********" />
+            </div>
+            <div class="input">
+                <label for="Password">Confirm Password:</label>
+                <input type="password" class="pass" placeholder="**********" />
+            </div>
+
+        </div>
+        <button id="btn">Reset Password</button>
+        <script>
+            var button = document.getElementById("btn");
+            button.addEventListener("click",function(){
+                alert("You have successfully reset your password,go back and log in again. Thank you");
+            });
+        </script>
+    </div>
+</body>
+</html>
