@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
-    <!-- <script defer src="script.js"></script> -->
-    <title>Register</title>
-</head>
-<body>
-    <!--Sign up Page-->
-    <div class="signup">
-        <div class="logo">FUDMA</div>
-        <div>
-            <h4>Create Account with us</h4>
-           
-        </div>
-        <div class="form">
-            <div class="input">
-                <label for="email">Full Name:</label>
-                <input type="text" class="email" placeholder="Fadhimatu Ja'afar" />
-            </div>
-            <div class="input">
-                <label for="email">Userame:</label>
-                <input type="text" class="email" placeholder="Efjash" />
-            </div>
-            <div class="input">
-                <label for="email">Email:</label>
-                <input type="email" class="email" placeholder="example@gmail.com" />
-            </div>
-            <div class="input">
-                <label for="Password">Phone Number:</label>
-                <input type="password" class="pass" placeholder="07031177493" />
-            </div>
-            <div class="input">
-                <label for="Password">Password:</label>
-                <input type="password" class="pass" placeholder="**********" />
-            </div>
-            <div>
-                <input type="checkbox"><span>I agree to your terms and conditions</span>
-            </div>
-            <p>Already have an account? <a href="./login.html">Sign In</a></p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/login.css" />
+		<!-- <script defer src="script.js"></script> -->
+		<script defer src="script.js"></script>
+		<title>Register</title>
+	</head>
+	<body>
+		<!--Sign up Page-->
+		<div class="signup">
+			<div class="logo">FUDMA</div>
+			<div>
+				<h4>Create Account With Us</h4>
+			</div>
+			<div class="form">
+				<div class="input">
+					<label for="email">Email:</label>
+					<input type="email" class="email" placeholder="example@gmail.com" />
+				</div>
+				<div class="input">
+					<label for="fullname">Full Name:</label>
+					<input type="text" class="fullname" placeholder="Fadhimatu Ja'afar" />
+				</div>
+				<div class="input">
+					<label for="username">Username:</label>
+					<input type="text" class="username" placeholder="Efjash" />
+				</div>
 
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+				<div class="input">
+					<label for="phone">Phone Number:</label>
+					<input type="tel" class="phone" placeholder="07031177493" />
+				</div>
+				<div class="input">
+					<label for="pass">Password:</label>
+					<input type="password" class="pass" placeholder="**********" />
+				</div>
+				<div class="input">
+					<button class="signupBtn">Sign Up</button>
+				</div>
+				<div>
+					<input type="checkbox" /><span
+						>I agree to your terms and conditions</span
+					>
+				</div>
+				<p>Already have an account? <a href="./login.html">Sign In</a></p>
+			</div>
+		</div>
+	</body>
 </html>

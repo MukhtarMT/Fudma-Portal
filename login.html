@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Getting Started</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<script defer src="script.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting Started</title>
-    <link rel="stylesheet" href="./login.css">
-</head>
+	<body>
+		<!--login page-->
+		<div class="login" id="login">
+			<div class="logo">FUDMA</div>
 
-<body>
-    <!--login page-->
-    <div class="login" id="login">
-        <div class="logo">FUDMA</div>
+			<div class="form">
+				<div class="input">
+					<label for="email">Email:</label>
+					<input type="email" class="email" placeholder="example@gmail.com" />
+				</div>
+				<div class="input">
+					<label for="Password">Password:</label>
+					<input type="password" class="pass" placeholder="**********" />
+				</div>
 
-        <div class="form">
-            <div class="input">
-                <label for="email">Email:</label>
-                <input type="email" class="email" placeholder="example@gmail.com" />
-            </div>
-            <div class="input">
-                <label for="Password">Password:</label>
-                <input type="password" class="pass" placeholder="**********" />
-            </div>
-        </div>
-        <p>Forgot your password? <a href="./reset.html">click here</a></p>
-    </div>
-</body>
+				<div class="input">
+					<button class="loginBtn">Login</button>
+				</div>
+			</div>
+			<p>Forgot your password? <a href="./reset.html">click here</a></p>
+		</div>
+	</body>
+
+	<script>
+		const email = document.querySelector('.email');
+		const password = document.querySelector('.pass');
+		const loginBtn = document.querySelector('.loginBtn');
+		loginBtn.addEventListener('click', () => {
+			if (
+				email.value.length === 0 ||
+				!email.value.includes('@') ||
+				!email.value.includes('.')
+			) {
+				email.style.border = ' 2px solid red';
+				return alert('Invalid email');
+			} else {
+				email.style.border = ' 2px solid green';
+			}
+			if (password.value.length < 6) {
+				password.style.border = ' 2px solid red';
+				return alert("password can't be less than 6");
+			} else {
+				password.style.border = ' 2px solid green';
+			}
+
+			window.location.href = 'index.html';
+		});
+	</script>
 </html>
