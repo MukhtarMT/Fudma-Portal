@@ -7,14 +7,18 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    
 }
-.logo {
+.logo,
+.signupBtn,
+.loginBtn {
     font-size: 2rem;
     background-color: #ff7200;
     color: black ;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin-top: 4rem;
+    padding: 0.3rem;
+    margin-top: 2rem;
+    border-color: #ff7200;
 }
 .login h4,
 .signup h4,
@@ -51,7 +55,10 @@ input {
     width: 70%;
 }
 .email,
-.pass {
+.pass,
+.phone,
+.username,
+.fullname {
     padding: 1.2rem;
     border-radius: 1rem;
     width: 90%;

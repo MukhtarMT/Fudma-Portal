@@ -1,33 +1,55 @@
 //VARIABLE DECLARATION
-const fullname = document.getElementById("fullname");
-const password = document.getElementById("password");
-const signupBtn = document.getElementById("signupBtn");
-const link = document.getElementById("link");
+const fullname = document.querySelector('.fullname');
+const username = document.querySelector('.username');
+const email = document.querySelector('.email');
+const password = document.querySelector('.pass');
+const email2 = document.querySelector('.email2');
+const password2 = document.querySelector('.pass2');
+const phone = document.querySelector('.phone');
+const signupBtn = document.querySelector('.signupBtn');
+
 //FORM VALIDATION FUNCION
-function validateForm(){
-    if (password.value.length < 6) {
-        password.style.border = " 2px solid red";
-        alert("password can't be less than 6");
-    } else {
-        password.style.border = " 2px solid green";
-    }
-    if (Fullname.value.length === 0) {
-        Fullname.style.border = " 2px solid red";
-        alert("name cannot be empty");
-    } else {
-        fullname.style.border = " 2px solid green";
-    }
-    if (email.value.length === 0) {
-        email.style.border = " 2px solid red";
-        alert("email cannot be empty");
-    } else {
-        email.style.border = " 2px solid green";
-    }
-    if (
-        password.value.length > 6 &&
-        fullname.value.length != 0 &&
-        email.value.length != 0
-    ) 
+function validateForm() {
+	if (
+		email.value.length === 0 ||
+		!email.value.includes('@') ||
+		!email.value.includes('.')
+	) {
+		email.style.border = ' 2px solid red';
+		return alert('Invalid email');
+	} else {
+		email.style.border = ' 2px solid green';
+	}
+
+	if (fullname.value.length === 0) {
+		fullname.style.border = ' 2px solid red';
+		return alert('fullname cannot be empty');
+	} else {
+		fullname.style.border = ' 2px solid green';
+	}
+
+	if (username.value.length === 0) {
+		username.style.border = ' 2px solid red';
+		return alert('username cannot be empty');
+	} else {
+		username.style.border = ' 2px solid green';
+	}
+
+	if (phone.value.length === 0) {
+		phone.style.border = ' 2px solid red';
+		return alert('phone cannot be empty');
+	} else {
+		phone.style.border = ' 2px solid green';
+	}
+	if (password.value.length < 6) {
+		password.style.border = ' 2px solid red';
+		return alert("password can't be less than 6");
+	} else {
+		password.style.border = ' 2px solid green';
+	}
+	alert('Registration successful. Kindly proceed to login.');
+	window.location.href = 'login.html';
 }
 //event listener
-signupBtn.addEventListener("click", validateForm);
+signupBtn.addEventListener('click', validateForm);
+
