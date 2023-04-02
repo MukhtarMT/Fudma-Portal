@@ -1,9 +1,11 @@
 /* Set font family and size */
 body {
 	font-family: Arial, sans-serif;
-	font-size: 16px;
+	font-size: 10px;
 }
-
+h1{
+	text-align: center;
+}
 /* Center the table */
 table {
 	margin: 0 auto;
@@ -20,6 +22,7 @@ th {
 td {
 	border: 1px solid #ccc;
 	padding: 10px;
+	text-align: center;
 }
 
 /* Style user image */
@@ -32,7 +35,8 @@ td img {
 
 /* Style short note column */
 td:last-child {
-	width: 50%;
+	text-align: center;
+	width: 40%;
 }
 
 /* Add hover effect on table rows */
