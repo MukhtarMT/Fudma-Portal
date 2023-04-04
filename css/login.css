@@ -11,7 +11,8 @@
 }
 .logo,
 .signupBtn,
-.loginBtn {
+.loginBtn,
+.Reset {
     font-size: 2rem;
     background-color: #ff7200;
     color: black ;
