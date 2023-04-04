@@ -50,6 +50,4 @@ function validateForm() {
 	alert('Registration successful. Kindly proceed to login.');
 	window.location.href = 'login.html';
 }
-//event listener
-signupBtn.addEventListener('click', validateForm);
 
