@@ -51,3 +51,4 @@ function validateForm() {
 	window.location.href = 'login.html';
 }
 
+signupBtn.addEventListener('click', validateForm);

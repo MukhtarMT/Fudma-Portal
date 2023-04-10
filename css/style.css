@@ -144,10 +144,13 @@ ul li a:hover{
 
 }
 
-.content .cn a{
+.cn a{
     text-decoration: none;
     color: #000;
     transition: .3s ease;
+}
+.right {
+    display: flex;
 }
 
 
